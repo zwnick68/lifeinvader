@@ -1,8 +1,13 @@
+
+import Timeline from "./Timeline.js"
+import Sidebar from "./Sidebar.js"
 const Homepage = () => {
-    return(
+    return (
         <div>
-            <h3>Homepage</h3>
+          <h2>Welcome to Lifeinvader</h2>
+          <Timeline/>
+          <Sidebar/>
         </div>
-    )
-}
+      );
+    }
 export default Homepage;
