@@ -1,5 +1,5 @@
 import { useEffect,useState,React } from "react"
-
+import Post from "./Post.js"
 const Timeline = () => {
     const [posts, setPosts] =useState([])
     useEffect(() =>{
@@ -16,12 +16,9 @@ const Timeline = () => {
         <div>
             <h3>Timeline</h3>
             {
-                posts.map((element)=> {
+                posts.map((posts)=> {
                     return(
-                        <div>
-                    <p>{element.username}</p>
-                    <p>{element.content}</p>
-                    </div>
+                        <Post key={posts.id} posts={posts}/>
                     )
                 })
     
